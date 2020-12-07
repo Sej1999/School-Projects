@@ -1,0 +1,3 @@
+icon: https://www.pngitem.com/middle/hmRRi_clip-art-social-media-icons-png-transparent-png/
+istok web: https://fonts.google.com/specimen/Istok+Web#standard-styles
+reset css: https://meyerweb.com/eric/tools/css/reset/

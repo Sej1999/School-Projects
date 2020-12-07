@@ -1,0 +1,281 @@
+/*Used for all html's*/
+* {box-sizing: border-box;}
+
+/*Import font*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+html,body {
+  font-family: 'Open Sans', sans-serif;
+  /*background-color: #061547;*/
+  height: 100%;
+}
+
+/*Wrapper*/
+.wrapper {
+  margin-right: auto;
+  margin-left: auto;
+
+  max-width: 1980px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+/*Header*/
+header {
+  width: 100%;
+  height: 100px;
+}
+ header > a > img {
+  height: 100%;
+  width: 12%;
+  display: flex;
+  float: left;
+  padding: 10px;
+ }
+/* Main menu */
+.main-menu {
+
+}
+.main-menu ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.main-menu li a {
+  display: block;
+  padding:15px;
+  text-decoration: none;
+  color: #2F242C;
+  font-size: 20px;
+  margin-top: 25%;
+}
+
+li a:hover {
+  color: grey;
+}
+/* Main menu END */
+/*Header END*/
+
+.front {
+  position: relative;
+}
+
+.text-block {
+  position: absolute;
+  bottom: 60%;
+  left: 5%;
+  color: white;
+  padding: 2em;
+}
+
+.text-block h2 {
+  font-size: 45px;
+}
+
+.front-img {
+  width: 100%;
+  height: 52.5em;
+}
+
+/*Footer*/
+footer {
+  width: 100%;
+  background-color: #2F242C;
+  float: left;
+  margin-bottom: -50px;
+}
+
+footer ul {
+  float: left;
+}
+
+footer li a {
+  display: block;
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 15px;
+  margin-left: 5%;
+  padding: 10px;
+}
+
+footer h3 {
+  color: white;
+  display: block;
+  padding-top: 20px;
+  margin-left: 80%;
+}
+
+/*Footer END*/
+/*Used for all html's END*/
+
+/*Index*/
+.icon-box {
+  position: absolute;
+  width: 5%;
+  height: 18em;
+/*  border-right: 1px solid black;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;*/
+  bottom: 30%;
+}
+
+.icon-box a img:hover{
+  width: 65px;
+  height: 65px;
+}
+
+.home-box-left {
+  width: 95%;
+  height: 30em;
+  background-color: red;
+  margin-right: auto;
+  margin-top: 10px;
+}
+
+.home-box-right {
+  width: 95%;
+  height: 30em;
+  background-color: blue;
+  margin-left: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+/*Index END*/
+
+/*Projects*/
+.h1-project {
+   font-size: 50px;
+   text-align:center;
+}
+
+.project-box {
+  width: 350px;
+  height: 350px;
+  margin-top: 5%;
+  margin-left: 8%;
+  margin-bottom: 2%;
+  float: left;
+  filter: grayscale(100%) brightness(40%);
+  transition: filter 2s;
+  position: relative;/*
+  background-color: #000f85;*/
+}
+
+.project-box > a > img {
+  height: 100%;
+  width: 100%;
+}
+
+.project-box > a > h3 {
+  margin-left: 60px;
+  font-size: 25px;
+  padding-top: 150px;
+  position: absolute;
+  color: yellow;
+}
+
+.project-box:hover {
+  font-size: 20px;
+  filter: grayscale(0%) brightness(100%);
+  transition: filter 1s;
+}
+/**
+.project.box:nth-child(5+6+7+8) {
+  margin-bottom: 10px;
+}**/
+/*Projects END*/
+
+/*About*/
+.h1-about {
+  font-size: 50px;
+  text-align:center;
+}
+
+.img-about {
+  width: 350px;
+  height: 450px;
+  margin: 50px;
+  float: left;
+}
+
+.text-about {
+  border: 2px solid black;
+  width: 50%;
+  height: 450px;
+  float: left;
+  margin-top: 50px;
+}
+
+.text-about > h2 {
+  font-size: 30px;
+}
+
+.text-about > p {
+  margin-top: 10px;
+  line-height: 40px;
+  border-bottom: 3px solid black;
+  border-bottom-style: groove;
+}
+
+.circle-about {
+  width: 20%;
+  height: 450px;
+  background-color: green;
+  float: left;
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
+.circle-about1 {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-left: 100px;
+  margin-top: 20px;
+  background-image: url(../pictures/painting-circle.png);
+}
+
+.circle-about2 {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  border-radius: 50%;
+  margin-left: 100px;
+  margin-top: 20px;
+}
+/*About END*/
+
+/*Blog*/
+.h1-blog {
+  font-size: 50px;
+  text-align:center;
+}
+
+.blog-box {
+  width: 95%;
+  height: 30em;
+  background-color: red;
+  margin-right: auto;
+  margin-top: 2.5em;
+  margin-bottom: 2.5em;
+}
+
+.blog-box > img {
+  width: 300px;
+  height: 400px;
+  background-color: blue;
+  margin-top: 2.5em;
+  margin-left: 1em;
+  float: left;
+  margin-right: 1em;
+}
+
+.blog-box > p {
+  font-size: 20px;
+  padding-top: 2.1em;
+  padding-right: 20px;
+  padding-left: 20px;
+  line-height: 40px;
+}
+/*Blog END*/
