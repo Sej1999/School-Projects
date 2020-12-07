@@ -16,9 +16,9 @@ html,body {
   margin-right: auto;
   margin-left: auto;
 
-  max-width: 1980px;
-  padding-right: 10px;
-  padding-left: 10px;
+  max-width: 1920px;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 /*Header*/
@@ -200,8 +200,8 @@ footer h3 {
 }
 
 .text-about {
-  border: 2px solid black;
-  width: 50%;
+  /*border: 2px solid black;*/
+  width: 45%;
   height: 450px;
   float: left;
   margin-top: 50px;
