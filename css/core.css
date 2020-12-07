@@ -178,7 +178,7 @@ footer h3 {
 .project-box:hover {
   font-size: 20px;
   filter: grayscale(0%) brightness(100%);
-  transition: filter 1s;
+  transition: filter 0.5s;
 }
 /**
 .project.box:nth-child(5+6+7+8) {
