@@ -34,10 +34,7 @@ header {
   padding: 10px;
  }
 /* Main menu */
-.main-menu {
-
-}
-.main-menu ul {
+.main-menu  {
   display: flex;
   justify-content: space-around;
 }
@@ -125,23 +122,93 @@ footer h3 {
   height: 65px;
 }
 
-.home-box-left {
-  width: 95%;
-  height: 30em;
-  background-color: red;
-  margin-right: auto;
+.h2-home {
+  font-size: 40px;
+  text-align: center;
   margin-top: 10px;
 }
 
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto repeat;
+  background-color: #2196F3;
+  padding: 10px;
+  grid-gap: 10px;
+}
+
+
+.home-box-left {
+  grid-column-start: span 2;
+  grid-row-start: auto;
+  width: 85%;
+  height: 25em;
+  background-color: red;
+  margin-right: auto;
+  margin-top: 65px;
+}
+
+.img-left {
+  height: 25em;
+  width: 17.5%;
+  background-color: yellow;
+  float: left;
+}
+/*
+.home-box-left > img {
+  height: 100%;
+  width: 17.5%;
+  background-color: yellow;
+  float: left;
+}
+*/
+.home-box-left > p {
+  line-height: 30px;
+  font-size: 20px;
+  padding-top: 10px;
+  padding-left: 20px;
+}
+
+.home-box-left > h3 {
+  font-size: 30px;
+  padding-top: 10px;
+}
+
 .home-box-right {
-  width: 95%;
-  height: 30em;
+  grid-column-start: auto;
+  width: 85%;
+  height: 25em;
   background-color: blue;
-  margin-left: auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 65px;
+  margin-bottom: 65px;
+}
+/*
+.home-box-right > img {
+  height: 100%;
+  width: 17.5%;
+  background-color: yellow;
+  float: right;
+}
+*/
+.img-right {
+  height: 25em;
+  width: 17.5%;
+  background-color: yellow;
+  float: right;
+}
+
+.home-box-right > p {
+  line-height: 30px;
+  font-size: 20px;
+  padding-top: 10px;
+}
+
+.home-box-right > h3 {
+  font-size: 30px;
+  padding-top: 10px;
 }
 /*Index END*/
+
+
 
 /*Projects*/
 .h1-project {
@@ -153,11 +220,11 @@ footer h3 {
   width: 350px;
   height: 350px;
   margin-top: 5%;
-  margin-left: 8%;
+  margin-left: 5%;
   margin-bottom: 2%;
   float: left;
   filter: grayscale(100%) brightness(40%);
-  transition: filter 2s;
+  transition: filter 1s;
   position: relative;/*
   background-color: #000f85;*/
 }
