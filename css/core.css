@@ -9,7 +9,6 @@ html,body {
   font-family: 'Open Sans', sans-serif;
   /*background-color: #061547;*/
   height: 100%;
-  min-height: 100%;
 }
 
 /*Wrapper*/
@@ -168,6 +167,7 @@ footer h3 {
 .home-box-left > h3 {
   font-size: 30px;
   padding-top: 10px;
+  padding-left: 20px;
 }
 
 .home-box-right {
@@ -193,11 +193,13 @@ footer h3 {
   line-height: 30px;
   font-size: 20px;
   padding-top: 10px;
+  padding-left: 20px;
 }
 
 .home-box-right > h3 {
   font-size: 30px;
   padding-top: 10px;
+  padding-left: 20px;
 }
 /*Index END*/
 
@@ -251,6 +253,10 @@ footer h3 {
 
 .h3-pimple-project {
   margin-left: 65px;
+}
+
+.h3-outdoor-project {
+  margin-left: 125px;
 }
 
 .project-box:hover {
@@ -328,13 +334,32 @@ footer h3 {
 .blog-box {
   width: 95%;
   height: 30em;
-  background-color: red;
   margin-right: auto;
   margin-top: 2.5em;
   margin-bottom: 2.5em;
 }
 
-.blog-box > img {
+.blog-box:nth-child(3) {
+  border: 2px solid #33CE4B;
+}
+
+.blog-box:nth-child(4) {
+  border: 2px solid #3E55AC;
+}
+
+.blog-box:nth-child(5) {
+  border: 2px solid #FF3D6C;
+}
+
+.blog-box:nth-child(6) {
+  border: 2px solid #2F242C;
+}
+
+.blog-box:nth-child(7) {
+  border: 2px solid #33CE4B;
+}
+
+.blog-box img {
   width: 300px;
   height: 400px;
   background-color: blue;
@@ -344,37 +369,45 @@ footer h3 {
   margin-right: 1em;
 }
 
-.blog-box > p {
+.blog-box p {
   font-size: 20px;
   padding-top: 1.8em;
   padding-right: 20px;
   padding-left: 20px;
   line-height: 40px;
 }
+
+.blog-box p:nth-child(3) {
+  text-align: right;
+  padding-left: 20px;
+  line-height: 40px;
+  margin-top: 220px;
+}
 /*Blog END*/
 
-/*Painting*/
-.h1-paint {
+/*Each Project*/
+.h1-each {
   font-size: 50px;
   text-align:center;
 }
 
-.painting-wrapper {
+.each-wrapper {
   width: 100%;
-  height: 250em;
+  height: 300em;
   background-color: red;
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
-.painting-wrapper img {
-  margin-left: auto;
-  margin-right: auto;
+.each-wrapper img {
   margin-top: 10px;
   margin-bottom: 10px;
+  margin-left: 35%;
+  height: 300px;
+  width: 500px;
 }
 
-.painting-textbox {
+.each-textbox {
   width: 80%;
   height: 800px;
   background-color: yellow;
@@ -382,4 +415,16 @@ footer h3 {
   margin-right: auto;
   margin-top: 20px;
 }
-/*Painting END*/
+
+.each-textbox h3 {
+  text-align: center;
+  font-size: 30px;
+}
+
+.each-textbox p {
+  margin-top: 20px;
+  line-height: 35px;
+  font-size: 20px;
+  text-align: center;
+}
+/*Each Project END*/
