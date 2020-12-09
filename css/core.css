@@ -9,10 +9,11 @@ html,body {
   font-family: 'Open Sans', sans-serif;
   /*background-color: #061547;*/
   height: 100%;
+  min-height: 100%;
 }
 
 /*Wrapper*/
-.wrapper {
+.global-wrapper {
   margin-right: auto;
   margin-left: auto;
 
@@ -80,6 +81,8 @@ footer {
   width: 100%;
   background-color: #2F242C;
   float: left;
+  margin: 100px;
+  left: 0;
   bottom: 0;
 }
 
@@ -101,6 +104,13 @@ footer h3 {
   display: block;
   padding-top: 20px;
   margin-left: 80%;
+}
+
+.push-box {
+  width: 100%;
+  background-color: red;
+  margin-top: 97px;
+  float: left;
 }
 
 /*Footer END*/
@@ -128,39 +138,26 @@ footer h3 {
   margin-top: 10px;
 }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: auto auto repeat;
-  background-color: #2196F3;
-  padding: 10px;
-  grid-gap: 10px;
-}
-
-
 .home-box-left {
-  grid-column-start: span 2;
+  grid-column-start: auto;
   grid-row-start: auto;
-  width: 85%;
+  width: 50%;
   height: 25em;
   background-color: red;
   margin-right: auto;
   margin-top: 65px;
+  margin-left: 20%;
+  float: left;
 }
 
 .img-left {
   height: 25em;
+  margin-top: 65px;
   width: 17.5%;
   background-color: yellow;
   float: left;
 }
-/*
-.home-box-left > img {
-  height: 100%;
-  width: 17.5%;
-  background-color: yellow;
-  float: left;
-}
-*/
+
 .home-box-left > p {
   line-height: 30px;
   font-size: 20px;
@@ -174,26 +171,22 @@ footer h3 {
 }
 
 .home-box-right {
-  grid-column-start: auto;
-  width: 85%;
+  width: 50%;
   height: 25em;
   background-color: blue;
-  margin-top: 65px;
-  margin-bottom: 65px;
-}
-/*
-.home-box-right > img {
-  height: 100%;
-  width: 17.5%;
-  background-color: yellow;
   float: right;
+  margin-top: 65px;
+  margin-bottom: 10px;
+  margin-right: 20%;
 }
-*/
+
 .img-right {
   height: 25em;
   width: 17.5%;
   background-color: yellow;
   float: right;
+  margin-top: 65px;
+  margin-bottom: 10px;
 }
 
 .home-box-right > p {
@@ -225,8 +218,7 @@ footer h3 {
   float: left;
   filter: grayscale(100%) brightness(40%);
   transition: filter 1s;
-  position: relative;/*
-  background-color: #000f85;*/
+  position: relative;
 }
 
 .project-box > a > img {
@@ -235,11 +227,30 @@ footer h3 {
 }
 
 .project-box > a > h3 {
-  margin-left: 60px;
   font-size: 25px;
   padding-top: 150px;
+  text-align: center;
   position: absolute;
-  color: yellow;
+}
+
+.h3-animate-project {
+  margin-left: 60px;
+}
+
+.h3-video-project {
+  margin-left: 100px;
+}
+
+.h3-simple-project {
+  margin-left: 60px;
+}
+
+.h3-food-project {
+  margin-left: 120px;
+}
+
+.h3-pimple-project {
+  margin-left: 65px;
 }
 
 .project-box:hover {
@@ -247,10 +258,6 @@ footer h3 {
   filter: grayscale(0%) brightness(100%);
   transition: filter 0.5s;
 }
-/**
-.project.box:nth-child(5+6+7+8) {
-  margin-bottom: 10px;
-}**/
 /*Projects END*/
 
 /*About*/
@@ -288,7 +295,6 @@ footer h3 {
 .circle-about {
   width: 20%;
   height: 450px;
-  background-color: green;
   float: left;
   margin-top: 50px;
   margin-left: 50px;
@@ -306,10 +312,10 @@ footer h3 {
 .circle-about2 {
   width: 200px;
   height: 200px;
-  background-color: red;
   border-radius: 50%;
   margin-left: 100px;
   margin-top: 20px;
+  background-image: url(../pictures/morgen-kaffe-circle.png);
 }
 /*About END*/
 
@@ -340,9 +346,40 @@ footer h3 {
 
 .blog-box > p {
   font-size: 20px;
-  padding-top: 2.1em;
+  padding-top: 1.8em;
   padding-right: 20px;
   padding-left: 20px;
   line-height: 40px;
 }
 /*Blog END*/
+
+/*Painting*/
+.h1-paint {
+  font-size: 50px;
+  text-align:center;
+}
+
+.painting-wrapper {
+  width: 100%;
+  height: 250em;
+  background-color: red;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.painting-wrapper img {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.painting-textbox {
+  width: 80%;
+  height: 800px;
+  background-color: yellow;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+/*Painting END*/
