@@ -48,8 +48,10 @@ header {
   margin-top: 25%;
 }
 
-li a:hover {
-  color: grey;
+li a:hover {/*
+  color: grey;*/
+  color: white;
+  background-color: black;
 }
 /* Main menu END */
 /*Header END*/
@@ -149,9 +151,9 @@ footer h3 {
 }
 
 .img-left {
-  height: 25em;
+  height: 400px;
   margin-top: 65px;
-  width: 17.5%;
+  width: 300px;
   background-color: yellow;
   float: left;
 }
@@ -183,17 +185,14 @@ footer h3 {
 }
 
 .img-right {
-  height: 25em;
-  width: 17.5%;
+  height: 400px;
+  width: 300px;
   background-color: yellow;
   float: right;
   margin-top: 65px;
   margin-bottom: 10px;
 }
 
-.img-right:nth-child(0) {
-  background-image: url(../pictures/painting.png);
-}
 /*
 .img-right img {
   width: 100px;
@@ -272,6 +271,10 @@ footer h3 {
 
 .h3-cssani-project {
   margin-left: 75px;
+}
+
+.h3-draw-project {
+  margin-left: 10px;
 }
 
 .project-box:hover {
