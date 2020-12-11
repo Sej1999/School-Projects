@@ -11,7 +11,7 @@ html, body {
   height: 100%;
 }
 
-/*Wrapper*/
+/*Global Wrapper*/
 .global-wrapper {
   margin-right: auto;
   margin-left: auto;
@@ -25,6 +25,9 @@ html, body {
 header {
   width: 100%;
   height: 100px;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
 }
  header a img {
   height: 100%;
@@ -40,18 +43,17 @@ header {
 }
 
 .main-menu li a {
+  border: 1px solid black;
   display: block;
   padding:15px;
   text-decoration: none;
   color: #2F242C;
-  font-size: 20px;
+  font-size: 18px;
   margin-top: 25%;
 }
 
-li a:hover {/*
-  color: grey;*/
-  color: white;
-  background-color: black;
+li a:hover {
+  color: grey;
 }
 /* Main menu END */
 /*Header END*/
@@ -144,6 +146,7 @@ footer h3 {
   height: 35em;
   display: flex;
   margin-top: 10px;
+  margin-bottom: 80px;
 }
 
 .me-box {
@@ -164,6 +167,12 @@ footer h3 {
   margin-top: 10px;
   text-align: center;
   line-height: 30px;
+}
+
+.me-box img {
+  width: 100%;
+  height: 18em;
+  background-color: red;
 }
 
 .h2-home {
@@ -254,6 +263,18 @@ footer h3 {
    text-align:center;
 }
 
+.h2-project {
+  float: left;
+  text-align: center;
+}
+/*
+.project-wrapper {
+  width: 100%;
+  height: 50em;
+  background-color:
+  display: flex;
+}
+*/
 .project-box {
   width: 350px;
   height: 350px;
@@ -272,12 +293,9 @@ footer h3 {
 }
 
 .project-box > a > h3 {
-  left: auto;
-  right: auto;
   font-size: 25px;
-  padding-top: 150px;
-  text-align: center;
   position: absolute;
+  margin-top:140px;
 }
 
 .h3-animate-project {
@@ -287,10 +305,12 @@ footer h3 {
 
 .h3-video-project {
   margin-left: 100px;
+  color: blue;
 }
 
 .h3-simple-project {
   margin-left: 60px;
+  color: blue;
 }
 
 .h3-food-project {
@@ -300,18 +320,22 @@ footer h3 {
 
 .h3-pimple-project {
   margin-left: 65px;
+  color: blue;
 }
 
 .h3-outdoor-project {
   margin-left: 125px;
+  color: blue;
 }
 
 .h3-cssani-project {
   margin-left: 75px;
+  color: blue;
 }
 
 .h3-draw-project {
-  margin-left: 10px;
+  margin-left: 120px;
+  color: blue;
 }
 
 .project-box:hover {
@@ -319,6 +343,7 @@ footer h3 {
   filter: grayscale(0%) brightness(100%);
   transition: filter 0.5s;
 }
+
 /*Projects END*/
 
 /*About*/
@@ -451,13 +476,16 @@ footer h3 {
 .h1-each {
   font-size: 50px;
   text-align:center;
+  margin-top: 10px;
 }
 
 .each-wrapper {
-  width: 100%;
+  margin: auto;
+  width: 80%;
   height: 145em;
-  margin-top: 10px;
+  margin-top: 20px;
   margin-bottom: 10px;
+  border: 3px solid black;
 }
 
 .each-wrapper img {
@@ -477,7 +505,6 @@ footer h3 {
 .each-textbox {
   width: 80%;
   height: 800px;
-  background-color: yellow;
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
