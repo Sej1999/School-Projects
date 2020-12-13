@@ -7,7 +7,6 @@
 
 html, body {
   font-family: 'Open Sans', sans-serif;
-  /*background-color: #061547;*/
   height: 100%;
 }
 
@@ -25,32 +24,33 @@ html, body {
 header {
   width: 100%;
   height: 100px;
-  border-left: 1px solid black;
-  border-right: 1px solid black;
-  border-bottom: 1px solid black;
 }
+
  header a img {
-  height: 100%;
-  width: 12%;
-  display: flex;
-  float: left;
+  height: 6em;
+  width: 100%;
+  max-width: 350px;
   padding: 10px;
+  float: left;
+
  }
 /* Main menu */
 .main-menu  {
   display: flex;
   justify-content: space-around;
   height: 100px;
+  float: left;
+  width: 80%;
 }
 
 .main-menu li a {
   border-left: 1px solid black;
   display: block;
-  padding:15px;
+  padding: 15px;
   text-decoration: none;
   color: #2F242C;
   font-size: 18px;
-  margin-top: 25%;
+  margin-top: 1em;
 }
 
 li a:hover {
@@ -58,27 +58,6 @@ li a:hover {
 }
 /* Main menu END */
 /*Header END*/
-
-.front {
-  position: relative;
-}
-
-.text-block {
-  position: absolute;
-  bottom: 60%;
-  left: 5%;
-  color: white;
-  padding: 2em;
-}
-
-.text-block h2 {
-  font-size: 45px;
-}
-
-.front-img {
-  width: 100%;
-  height: 52.5em;
-}
 
 /*Footer*/
 footer {
@@ -121,13 +100,32 @@ footer h3 {
 /*Used for all html's END*/
 
 /*Index*/
+.front {
+  position: relative;
+  height:
+}
+
+.text-block {
+  position: absolute;
+  bottom: 60%;
+  left: 5%;
+  color: white;
+  padding: 2em;
+}
+
+.text-block h2 {
+  font-size: 45px;
+}
+
+.front-img {
+  width: 100%;
+  height: auto;
+}
+
 .icon-box {
   position: absolute;
   width: 5%;
   height: 18em;
-/*  border-right: 1px solid black;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;*/
   bottom: 30%;
 }
 
@@ -151,17 +149,20 @@ footer h3 {
 }
 
 .me-box {
-  width: 450px;
+  max-width: 450px;
   height: 100%;
-  background-color: white;
   border: 3px solid black;
   margin: auto;
+}
+
+.me-text-box {
+  height: 50%;
+  width: 100%;
 }
 
 .me-box h3 {
   text-align: center;
   font-size: 30px;
-  margin-top: 10px;
 }
 
 .me-box p {
@@ -172,8 +173,7 @@ footer h3 {
 
 .me-box img {
   width: 100%;
-  height: 18em;
-  background-color: red;
+  height: 50%;
 }
 
 .h2-home {
@@ -361,9 +361,9 @@ footer h3 {
 }
 
 .text-about {
-  /*border: 2px solid black;*/
+  border: 2px solid black;
   width: 45%;
-  height: 450px;
+  height: 48vh;
   float: left;
   margin-top: 50px;
 }
@@ -372,7 +372,12 @@ footer h3 {
   font-size: 30px;
 }
 
-.text-about > p {
+.text-box-about {
+  width: 100%;
+  height: 100%;
+}
+
+.text-box-about p {
   margin-top: 10px;
   line-height: 40px;
   border-bottom: 3px solid black;
@@ -381,7 +386,7 @@ footer h3 {
 
 .circle-about {
   width: 20%;
-  height: 450px;
+  height: 50vh;
   float: left;
   margin-top: 50px;
   margin-left: 50px;
@@ -413,9 +418,10 @@ footer h3 {
 }
 
 .blog-box {
-  width: 95%;
-  height: 30em;
+  width: 65%;
+  height: 20em;
   margin-right: auto;
+  margin-left: auto;
   margin-top: 2.5em;
   margin-bottom: 2.5em;
 }
@@ -442,9 +448,9 @@ footer h3 {
 /*Blog box Childs END*/
 
 .blog-box img {
-  width: 300px;
-  height: 400px;
-  border: 1px solid black;
+  max-width: 200px;
+  height: 80%;
+  /*border: 1px solid black;*/
   margin-top: 2.5em;
   margin-left: 1em;
   float: left;
@@ -458,18 +464,17 @@ footer h3 {
 
 .blog-box p {
   font-size: 20px;
-  padding-top: 1.2em;
   padding-right: 20px;
   padding-left: 20px;
   line-height: 40px;
-  margin-top: 100px;
+  margin-top: 30px;
 }
 
 .blog-box p:nth-child(4) {
   text-align: right;
   padding-left: 20px;
   line-height: 40px;
-  margin-top: 120px;
+  margin-top: 10px;
 }
 /*Blog END*/
 
@@ -521,3 +526,74 @@ footer h3 {
   text-align: center;
 }
 /*Each Project END*/
+
+
+/*Responsive*/
+@media only screen and (max-width:1124px) {
+  html {
+    overflow-x: hidden;
+  }
+}
+
+@media only screen and (max-width:960px) {
+  .me {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width:900px) {
+  /*For tablets*/
+  .icon-box {
+    bottom: 25%;
+  }
+}
+
+@media only screen and (max-width:500px) {
+  /*For mobiles*/
+  .global-wrapper {
+    padding: 0;
+    margin: 0;
+    max-width: 500px;
+  }
+  header {
+    height: 150px;
+  }
+
+  header a img {
+    width: 100%;
+  }
+
+  .main-menu {
+    width: 100%;
+    margin: 0;
+  }
+  /*Index*/
+  .front-img {
+    width: 90%;
+    height: auto;
+  }
+
+  .text-block {
+   bottom: 40%;
+   left: 0;
+}
+
+  .text-block h2 {
+    font-size: 15px;
+  }
+
+  .icon-box {
+    bottom: 0;
+    width: 4%;
+    height: 10em;
+  }
+
+  .icon-box a img {
+    width: 100%;
+  }
+
+  .me {
+    display: block;
+  }
+}
