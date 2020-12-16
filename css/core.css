@@ -50,7 +50,7 @@ header {
   text-decoration: none;
   color: #2F242C;
   font-size: 18px;
-  margin-top: 1em;
+  margin-top: 2em;
 }
 
 li a:hover {
@@ -152,6 +152,7 @@ footer h3 {
   max-width: 450px;
   height: 100%;
   border: 3px solid black;
+  border-style: double;
   margin: auto;
 }
 
@@ -191,18 +192,15 @@ footer h3 {
   margin-top: 65px;
   margin-left: 20%;
   float: left;
+  /*background-color: #33CE4B;*/
 }
 
-.img-left {
+.img-left a img {
   height: 400px;
   margin-top: 65px;
   width: 300px;
   background-color: yellow;
   float: left;
-}
-
-.img-left:nth-child(0) {
-  background-image: url(../pictures/painting.png);
 }
 
 .home-box-left p {
@@ -225,9 +223,10 @@ footer h3 {
   margin-top: 65px;
   margin-bottom: 10px;
   margin-right: 20%;
+  /*background-color: #3E55AC;*/
 }
 
-.img-right {
+.img-right a img {
   height: 400px;
   width: 300px;
   background-color: yellow;
@@ -268,14 +267,7 @@ footer h3 {
   float: left;
   text-align: center;
 }
-/*
-.project-wrapper {
-  width: 100%;
-  height: 50em;
-  background-color:
-  display: flex;
-}
-*/
+
 .project-box {
   width: 350px;
   height: 350px;
@@ -301,17 +293,17 @@ footer h3 {
 
 .h3-animate-project {
   margin-left: 60px;
-  color: blue;
+  color: red;
 }
 
 .h3-video-project {
   margin-left: 100px;
-  color: blue;
+  color: red;
 }
 
 .h3-simple-project {
   margin-left: 60px;
-  color: blue;
+  color: red;
 }
 
 .h3-food-project {
@@ -321,22 +313,22 @@ footer h3 {
 
 .h3-pimple-project {
   margin-left: 65px;
-  color: blue;
+  color: red;
 }
 
 .h3-outdoor-project {
   margin-left: 125px;
-  color: blue;
+  color: red;
 }
 
 .h3-cssani-project {
   margin-left: 75px;
-  color: blue;
+  color: red;
 }
 
 .h3-draw-project {
   margin-left: 120px;
-  color: blue;
+  color: red;
 }
 
 .project-box:hover {
@@ -361,7 +353,6 @@ footer h3 {
 }
 
 .text-about {
-  border: 2px solid black;
   width: 45%;
   height: 48vh;
   float: left;
