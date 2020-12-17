@@ -235,12 +235,6 @@ footer h3 {
   margin-bottom: 10px;
 }
 
-/*
-.img-right img {
-  width: 100px;
-  height: 50px;
-}
-*/
 .home-box-right p {
   line-height: 30px;
   font-size: 20px;
@@ -389,7 +383,7 @@ footer h3 {
   border-radius: 50%;
   margin-left: 100px;
   margin-top: 20px;
-  background-image: url(../pictures/painting-circle.png);
+  background-image: url(../pictures/painting-circle.jpg);
 }
 
 .circle-about2 {
@@ -398,7 +392,7 @@ footer h3 {
   border-radius: 50%;
   margin-left: 100px;
   margin-top: 20px;
-  background-image: url(../pictures/morgen-kaffe-circle.png);
+  background-image: url(../pictures/morgen-kaffe-circle.jpg);
 }
 /*About END*/
 
